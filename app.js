@@ -5,7 +5,7 @@ import { errorMiddleware, notFound } from "./middlewares/errorMiddleware.js";
 
 const app = express();
 
-// Global Middlewares
+// Global Middlewares...
 app.use(cors());
 
 app.use(express.json());
