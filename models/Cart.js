@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// Schema
 const cartSchema = new mongoose.Schema({
   courses: [
     {
