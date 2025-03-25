@@ -4,7 +4,7 @@ import { connectDB } from "./config/connectDb.js";
 import cloudinary from "cloudinary";
 import Razorpay from "razorpay";
 
-// Uncaught Rejections
+// Uncaught Rejections...
 process.on("uncaughtException", (error) => {
   console.log(`Shutting down the server due to uncaught error`);
   console.log(`Error: ${error.message}`);
