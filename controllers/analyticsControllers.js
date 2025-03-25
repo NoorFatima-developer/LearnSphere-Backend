@@ -4,6 +4,7 @@ import { Course } from "../models/Course.js";
 import { AdminEarning, Earning } from "../models/Earnings.js";
 import { User } from "../models/User.js";
 
+// getTeacherAnalytics..
 export const getTeacherAnalytics = catchAsyncErrors(async (req, res, next) => {
   const teacherCourses = await Course.find({ instructor: req.user._id });
   const teacherEarning = await Earning.find({ teacher: req.user._id });
